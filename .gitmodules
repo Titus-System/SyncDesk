@@ -1,12 +1,16 @@
 [submodule "syncdesk-api"]
 	path = syncdesk-api
 	url = git@github.com:Titus-System/syncdesk-api.git
+	branch = main
 [submodule "syncdesk-web"]
 	path = syncdesk-web
 	url = git@github.com:Titus-System/syncdesk-web.git
+	branch = main
 [submodule "syncdesk-mobile"]
 	path = syncdesk-mobile
 	url = git@github.com:Titus-System/syncdesk-mobile.git
+	branch = main
 [submodule "syncdesk-library"]
 	path = syncdesk-library
 	url = git@github.com:Titus-System/syncdesk-library.git
+	branch = main
