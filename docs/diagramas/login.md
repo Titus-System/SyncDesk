@@ -1,7 +1,7 @@
 ```mermaid
 flowchart TD
     A[Tela de Boas-Vindas] -->|Inserir email e Senha| B{Email e senha corretos?}
-    B -->|Sim| C{Usuário dentro do período de cobertura?}
+    B -->|Sim| C{Usuário dentro do período de cobertura de algum produto?}
     C -->|Sim| L[Página incial]
     C -->|Não| M[Pop Up - Seu acesso foi bloqueado devido ao término de contrato de Manutenção]
     B -->|Não| D[Pop Up - Email e/ou senha incorretos]
