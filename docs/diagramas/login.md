@@ -1,8 +1,10 @@
 ```mermaid
 flowchart TD
     A[Tela de Boas-Vindas] -->|Inserir email e Senha| B{Email e senha corretos?}
-    B -->|Sim| C[Página inicial]
-    B -->|Não| D[Pop Up  - Email e/ou senha incorretos]
+    B -->|Sim| C{Usuário dentro do período de cobertura?}
+    C -->|Sim| L[Página incial]
+    C -->|Não| M[Pop Up - Seu acesso foi bloqueado devido ao término de contrato de Manutenção]
+    B -->|Não| D[Pop Up - Email e/ou senha incorretos]
     A -->|Botão - Esqueci minha senha| E[Página Recuperar senha]
     E -->|Inserir email| F[Tela de adicionar o código de verificação]
     F -->|Adicionar codigo|G{Cdigo correto?}
