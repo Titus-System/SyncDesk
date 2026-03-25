@@ -36,7 +36,11 @@ We use a structured commit format to keep our history readable. We use the scope
 - **test**: Adding or refactoring tests (no production code change).
 - **chore**: Updating build tasks, package dependencies, etc.
 
-> **Pro-Tip:** Use GitHub keywords like `Close #42` or `Fixes #42` in your PR description (or commit footer) to automatically close the issue once the code is merged.
+#### Linking Issues in Pull Requests
+
+To keep our project board organized, we can use GitHub keywords like `Close #42`, `Fixes #42`, or `Resolves #42` in your Pull Request description. This will automatically close the associated issue once the PR is merged into the default branch.
+
+For more details on supported keywords, check the [GitHub documentation on linking PRs to issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue).
 
 ### Git Commit Template
 
