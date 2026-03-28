@@ -5,7 +5,7 @@
   "start_date": "2024-03-26T10:00:00Z",
   "end_date": "2024-03-26T10:05:00Z",
 
-  "customer": {
+  "client": {
     "id": "99",
     "name": "João Silva",
     "company": {
