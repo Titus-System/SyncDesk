@@ -21,10 +21,9 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | **1** | Como atendente, quero poder trocar mensagens com clientes em uma tela de chat, para conseguir compreender suas necessidades e auxiliar rapidamente.  | CONCLUÍDA | ▲ Alta |
 | **1** | Como solicitante, quero começar uma conversa rapidamente e ser guiado com algumas perguntas iniciais, para que meu problema seja identificado de forma ágil e descomplicada. | CONCLUÍDA | ▲ Alta |
 | **1** | Como atendente, quero gerenciar o ciclo de vida dos chamados (atualizar status, encaminhar, atribuir e encerrar), para acompanhar e controlar as solicitações dos clientes. | CONCLUÍDA | ▲ Alta |
-| **2** | Como atendente, quero poder acessar uma lista de chamados passados e em andamento com seus respectivos status, para monitorar os atendimentos sob minha responsabilidade. | PENDENTE | ▲ Alta |
 | **2** | Como gestor da aplicação, quero que o meu acesso possua ferramentas administrativas (como gestão de permissões, auditoria e relatórios), para ter controle sobre a operação do suporte. | PENDENTE | **=** Média |
+| **2** | Como usuário do sistema, quero buscar conversas no histórico de atendimentos com base em critérios como nome do destinatário e data, para localizar atendimentos específicos de forma mais rápida. | PENDENTE | ▼ Baixa |
 | **3** | Como solicitante do atendimento, quero receber notificações quando houver atualizações nos meus chamados, para acompanhar o andamento dos atendimentos sem precisar acessar constantemente o sistema. | PENDENTE | **=** Média |
-| **3** | Como usuário do sistema, quero buscar conversas no histórico de atendimentos com base em critérios como nome do destinatário e data, para localizar atendimentos específicos de forma mais rápida. | PENDENTE | ▼ Baixa |
 | **3** | Como solicitante do atendimento, quero poder deixar uma avaliação após o encerramento, para registrar meu nível de satisfação com o suporte prestado. | PENDENTE | ▼ Baixa |
 
 ### 📅 Cronograma
