@@ -31,7 +31,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | Sprint            | Prazo      | Status       | Documentação           | Entrega |
 | ----------------- | ---------- | ------------ | ---------------------- | ------- |
 | Kick Off          | 03/03/2026 | Concluído    | -                      | -       |
-| Sprint 1          | 05/04/2026 | Concluído    | [sprint1](sprint_1.md) | [video](https://youtu.be/jFSbepQdjow)       |
+| Sprint 1          | 05/04/2026 | Concluído    | [sprint1](sprint_1.md) | [video](https://youtu.be/ucNTISGGgis)       |
 | Sprint 2          | 03/05/2026 | Não iniciado | [sprint2](sprint_2.md) | Não entregue     |
 | Sprint 3          | 31/05/2026 | Não iniciado     | [sprint3](sprint_3.md) | Não entregue       |
 | Feira de Soluções | 11/06/2026 | Não iniciado     | [feira](feira_sol.md)  | -       |
@@ -44,16 +44,12 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 | Cliente          | Período/Curso                                  | Professor M2      | Professora P2     | Contato Cliente                    |
 | ---------------- | ---------------------------------------------- | ----------------- | ---------------- | ---------------------------------- |
-| Larissa Souza e Rafael Monteiro - Empresa Pro4Tech | 5º Análise e Desenvolvimento de Sistemas | Ronaldo Emerick  | Gerson Penha | <creonice@tecsysbrasil.com.br> |
+| Larissa Souza e Rafael Monteiro - Empresa Pro4Tech | 5º Análise e Desenvolvimento de Sistemas | Ronaldo Emerick  | Gerson Penha | <https://www.linkedin.com/company/pro4tech/> |
 
-## Documentação Técnica
-
-Arquitetura orientada a eventos e altamente desacoplada, mantendo foco em experiência do usuário, confiabilidade e integração transparente com IA. . Cada componente possui responsabilidades bem definidas e se comunica através de APIs REST, WebSockets e um broker de mensagens via Redis, conforme detalhado nos documentos de arquitetura.
 
 ## Arquitetura
 
-![arquitetura](docs/arquitetura_sprint_2.svg)
-Para detalhes da implementação: [Documento da Arquitetura](architecture.md)
+![arquitetura](docs/diagramas/arquitetura.jpeg)
 
 Abaixo você encontra os links para a documentação específica de cada serviço.
 
@@ -106,15 +102,14 @@ O `Nexa-frontend` é a **interface do cliente** da aplicação. Desenvolvida com
 ## 🛠️ Tecnologias Utilizadas
 
 <p align="center">
+  <img alt="FastAPI" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/fastapi/fastapi-original.svg">
   <img alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
-  <img alt="Flask" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg">
-  <img alt="Pytest" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg" />
+  <img alt="MongoDB" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
   <img alt="PostgreSQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg">
-  <img alt="SQLAlchemy" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" />
-  <img alt="redis" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" />
-  <img alt="Smolagents" height="30" width="30" src="https://cdn-avatars.huggingface.co/v1/production/uploads/63d10d4e8eaa4831005e92b5/a3R8vs2eGE578q4LEpaHB.png">
-  <img alt="Ollama" height="30" width="30" src="https://ollama.com/public/ollama.png">
-  <img alt="ChromaDB" height="30" width="30" src="https://www.trychroma.com/img/favicon.ico">
+  <img alt="Pytest" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg" />
+  <img alt="Poetry" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/poetry/poetry-original.svg" />
+  <img alt="Android Studio" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg">
+  <img alt="npm" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg">
 
 </p>
 
@@ -131,96 +126,10 @@ O `Nexa-frontend` é a **interface do cliente** da aplicação. Desenvolvida com
 <p align="center">
   <img alt="docker" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
   <img alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
-  <img alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
+  <img alt="Github" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
   <img alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
   <img alt="Jira" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg">
 </p>
-
-## Manual de Instalação e Execução
-
-### 1. Pré-requisitos
-
-- Python 3.11+ (para backend e IA)
-- Servidor Ollama rodando o modelo `qwen2.5:14b`
-- Node.js 18+ e npm (para frontend)
-- Redis (pode ser local ou via Docker)
-- Docker e Docker Compose (opcional, para facilitar a execução)
-
----
-
-### 2. Clonando o Repositório
-
-```bash
-git clone https://github.com/Titus-System/Nexa.git
-cd Nexa
-```
-
----
-
-### 3. Backend (Nexa-api)
-
-```bash
-cd Nexa-api
-python -m venv venv
-source venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
-cp .env.example .env
-# Edite o .env conforme necessário
-python run.py
-```
-
-**Ou Usando Docker Compose (opcional)**
-
-```bash
-cd Nexa-api
-docker compose up -d --build
-```
-
-O backend estará disponível em [http://localhost:5000](http://localhost:5000).
-
----
-
-### 4. IA/Agentes (Nexa-AI-Agents)
-
-```bash
-cd ../Nexa-AI-Agents
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-# Edite o .env conforme necessário
-
-docker compose up --build -d
-# Rodar o banco de dados vetorial
-
-python database/create.py
-# Inicia o banco de dados vetorial
-
-python run.py
-```
-
-O serviço estará disponível em [http://localhost:5001](http://localhost:5000).
-
----
-
-### 5. Frontend (Nexa-frontend)
-
-```bash
-cd ../Nexa-frontend
-npm install
-npm run dev
-```
-
-O frontend estará disponível em [http://localhost:5173](http://localhost:5173).
-
----
-
-### 7. Observações
-
-- Certifique-se de que o Redis está rodando (`localhost:6379` por padrão).
-- Ajuste as variáveis de ambiente nos arquivos `.env` de cada módulo conforme necessário.
-- Para produção, utilize Gunicorn no backend e configure variáveis de ambiente seguras.
 
 ## 🎓 Equipe <a id="equipe"></a>
 
