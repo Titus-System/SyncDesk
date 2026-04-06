@@ -226,7 +226,7 @@ O `Nexa-frontend` é a **interface do cliente** da aplicação. Desenvolvida com
       </td>
     </tr>
     <tr>
-      <td>Pablo Escobar</td>
+      <td>Pablo Rafael</td>
       <td>Dev Team</td>
       <td>
         <a href="https://github.com/PabloEscobar1993">
