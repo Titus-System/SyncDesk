@@ -30,11 +30,11 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 | Sprint            | Prazo      | Status       | Documentação           | Entrega |
 | ----------------- | ---------- | ------------ | ---------------------- | ------- |
-| Kick Off          | 25/08/2025 | Concluído    | -                      | -       |
-| Sprint 1          | 28/09/2025 | Concluído    | [sprint1](sprint_1.md) | [video](https://youtu.be/jFSbepQdjow)       |
-| Sprint 2          | 26/10/2025 | Concluído | [sprint2](sprint_2.md) | [video](https://youtu.be/kPAlwLgL88o)       |
-| Sprint 3          | 23/11/2025 | Concluído     | [sprint3](sprint_3.md) | [video](https://youtu.be/PD5dtSAmnF4)       |
-| Feira de Soluções | 04/12/2025 | Não iniciado     | [feira](feira_sol.md)  | -       |
+| Kick Off          | 03/03/2026 | Concluído    | -                      | -       |
+| Sprint 1          | 05/04/2026 | Concluído    | [sprint1](sprint_1.md) | [video](https://youtu.be/jFSbepQdjow)       |
+| Sprint 2          | 03/05/2026 | Não iniciado | [sprint2](sprint_2.md) | Não entregue     |
+| Sprint 3          | 31/05/2026 | Não iniciado     | [sprint3](sprint_3.md) | Não entregue       |
+| Feira de Soluções | 11/06/2026 | Não iniciado     | [feira](feira_sol.md)  | -       |
 
 ### Roadmap
 
@@ -44,7 +44,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 | Cliente          | Período/Curso                                  | Professor M2      | Professora P2     | Contato Cliente                    |
 | ---------------- | ---------------------------------------------- | ----------------- | ---------------- | ---------------------------------- |
-| Creonice Honório - Empresa TecSys | 4º Análise e Desenvolvimento de Sistemas | Giuliano Bertoti  | Juliana Pasquini | <creonice@tecsysbrasil.com.br> |
+| Larissa Souza e Rafael Monteiro - Empresa Pro4Tech | 5º Análise e Desenvolvimento de Sistemas | Ronaldo Emerick  | Gerson Penha | <creonice@tecsysbrasil.com.br> |
 
 ## Documentação Técnica
 
