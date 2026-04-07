@@ -55,19 +55,22 @@ Abaixo você encontra os links para acessar o repositório de cada serviço.
 
 -----
 
-### 🔹 [Nexa API](https://github.com/Titus-System/Nexa-api)
+### 🔹 [Syncdesk API](https://github.com/Titus-System/syncdesk-api)
 
-O `Nexa-api` é o **orquestrador central** da aplicação. Construído em Python com Flask, ele atua como o API Gateway, gerenciando todas as requisições do cliente, a lógica de negócio principal e a comunicação assíncrona com os outros serviços.
+O `syncdesk-api`, construído com FastAPI, é o **núcleo central** da aplicação, responsável por gerenciar toda a lógica de negócio, a comunicação entre os sistemas e a persistência dos dados. 
 
 **Principais Responsabilidades:**
 
-- **Endpoints REST:** Expõe os endpoints para o frontend, incluindo `/upload-pdf` para o envio de documentos e `/classify-partnumber` para classificações individuais.
-- **Orquestração Assíncrona:** Utiliza **Celery** e **Redis** para enfileirar tarefas pesadas (como o parsing de PDFs e as chamadas para a IA), mantendo a API sempre responsiva.
-- **Comunicação em Tempo Real:** Gerencia a comunicação via **WebSocket (Socket.IO)** com o frontend para enviar atualizações de progresso em tempo real.
-- **Persistência de Dados:** É o único serviço com responsabilidade de escrita no **banco de dados relacional (PostgreSQL)**, onde armazena os resultados finais das classificações.
-- **Validação e Segurança:** Valida os dados de entrada (usando Pydantic) e lida com a lógica de autenticação e autorização de usuários.
+- **Comunicação e Atendimento:** Gerencia o fluxo de dados das conversas, incluindo envio, recebimento e recuperação do histórico de mensagens entre solicitantes e atendentes.
+- **Autenticação e Controle de Acesso:** Realiza o gerenciamento de usuários, incluindo login, cadastro e controle de permissões por perfil (solicitante, atendente e administrador).
+- **Gestão de Chamados:** Controla o ciclo de vida dos atendimentos, incluindo criação, atualização de status e regras de negócio associadas ao atendimento.
+- **Processamento da Triagem Automatizada:** Executa a lógica do atendimento inicial automatizado, avaliando respostas do usuário e definindo os próximos passos do fluxo.
+- **Monitoramento e Métricas:** Disponibiliza métricas e indicadores de desempenho da aplicação, permitindo acompanhamento da saúde do sistema.
+- **Persistência de Dados:** Gerencia o armazenamento de dados em diferentes bancos:
+  - PostgreSQL para dados estruturados (usuários, chamados, permissões)
+  -  MongoDB para dados mais dinâmicos (mensagens e interações)
 
-**Tecnologias-chave:** `Python`, `Flask`, `Celery`, `Redis`, `Socket.IO`, `SQLAlchemy`, `Docker`.
+**Tecnologias-chave:** `Python`, `FastAPI`, `SQLAlchemy`, `PostgreSQL`, `MongoDB`, `JWT`, `Alembic`, `Docker`, `Pytest`.
 
 -----
 
