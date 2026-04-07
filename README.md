@@ -32,9 +32,9 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | ----------------- | ---------- | ------------ | ---------------------- | ------- |
 | Kick Off          | 03/03/2026 | Concluído    | -                      | -       |
 | Sprint 1          | 05/04/2026 | Concluído    | [sprint1](sprint_1.md) | [video](https://youtu.be/ucNTISGGgis)       |
-| Sprint 2          | 03/05/2026 | Não iniciado | [sprint2](sprint_2.md) | Não entregue     |
-| Sprint 3          | 31/05/2026 | Não iniciado     | [sprint3](sprint_3.md) | Não entregue       |
-| Feira de Soluções | 11/06/2026 | Não iniciado     | [feira](feira_sol.md)  | -       |
+| Sprint 2          | 03/05/2026 | Não iniciado | [sprint2]- | Não entregue     |
+| Sprint 3          | 31/05/2026 | Não iniciado     | [sprint3]- | Não entregue       |
+| Feira de Soluções | 11/06/2026 | Não iniciado     | [feira]-  | -       |
 
 ### Roadmap
 
