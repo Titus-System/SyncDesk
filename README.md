@@ -38,7 +38,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 ### Roadmap
 
-![roadmap](docs/roadmap.png)
+![roadmap](docs/diagramas/roadmap.png)
 
 ### 👥 Fatec São José dos Campos - Prof. Jessen Vidal
 
