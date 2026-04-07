@@ -31,7 +31,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | Sprint            | Prazo      | Status       | Documentação           | Entrega |
 | ----------------- | ---------- | ------------ | ---------------------- | ------- |
 | Kick Off          | 03/03/2026 | Concluído    | -                      | -       |
-| Sprint 1          | 05/04/2026 | Concluído    | [sprint1](sprint_1.md) | [video](https://youtu.be/ucNTISGGgis)       |
+| Sprint 1          | 05/04/2026 | Concluído    | [sprint1](docs/sprint1.md) | [video](https://youtu.be/ucNTISGGgis)       |
 | Sprint 2          | 03/05/2026 | Não iniciado | - | -     |
 | Sprint 3          | 31/05/2026 | Não iniciado     | - | -       |
 | Feira de Soluções | 11/06/2026 | Não iniciado     | -  | -       |
@@ -51,7 +51,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 ![arquitetura](docs/diagramas/arquitetura.jpeg)
 
-Abaixo você encontra os links para a documentação específica de cada serviço.
+Abaixo você encontra os links para acessar o repositório de cada serviço.
 
 -----
 
