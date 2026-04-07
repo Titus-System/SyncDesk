@@ -51,57 +51,6 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 ![arquitetura](docs/diagramas/arquitetura.jpeg)
 
-Abaixo você encontra os links para acessar o repositório de cada serviço.
-
------
-
-### 🔹 [Syncdesk API](https://github.com/Titus-System/syncdesk-api)
-
-O `syncdesk-api`, construído com FastAPI, é o **núcleo central** da aplicação, responsável por gerenciar toda a lógica de negócio, a comunicação entre os sistemas e a persistência dos dados. 
-
-**Principais Responsabilidades:**
-
-- **Comunicação e Atendimento:** Gerencia o fluxo de dados das conversas, incluindo envio, recebimento e recuperação do histórico de mensagens entre solicitantes e atendentes.
-- **Autenticação e Controle de Acesso:** Realiza o gerenciamento de usuários, incluindo login, cadastro e controle de permissões por perfil (solicitante, atendente e administrador).
-- **Gestão de Chamados:** Controla o ciclo de vida dos atendimentos, incluindo criação, atualização de status e regras de negócio associadas ao atendimento.
-- **Processamento da Triagem Automatizada:** Executa a lógica do atendimento inicial automatizado, avaliando respostas do usuário e definindo os próximos passos do fluxo.
-- **Monitoramento e Métricas:** Disponibiliza métricas e indicadores de desempenho da aplicação, permitindo acompanhamento da saúde do sistema.
-- **Persistência de Dados:** Gerencia o armazenamento de dados em diferentes bancos:
-  - PostgreSQL para dados estruturados (usuários, chamados, permissões)
-  -  MongoDB para dados mais dinâmicos (mensagens e interações)
-
-**Tecnologias-chave:** `Python`, `FastAPI`, `SQLAlchemy`, `PostgreSQL`, `MongoDB`, `JWT`, `Alembic`, `Docker`, `Pytest`.
-
------
-
-### 🧠 [Nexa AI Agents](https://github.com/Titus-System/Nexa-AI-Agents/)
-
-O `Nexa-AI-Agents` é o **cérebro de IA** do sistema. Este serviço especializado, também em Python, é totalmente focado em executar as tarefas de inteligência artificial. Ele opera de forma independente, recebendo solicitações do `Nexa-api` e retornando resultados sem conhecer a lógica de negócio principal.
-
-**Principais Responsabilidades:**
-
-- **Processamento de IA:** Executa os modelos de linguagem para gerar descrições técnicas e classificar NCMs.
-- **Retrieval-Augmented Generation (RAG):** Utiliza um **banco de dados vetorial (ChromaDB)** para buscar informações contextuais e semanticamente similares, aumentando a precisão e a qualidade das respostas geradas pela IA.
-- **Publicação de Progresso:** Comunica-se de forma assíncrona com o `Nexa-api`, publicando atualizações de progresso em um canal **Redis (Pub/Sub)**.
-- **Serviço Agnóstico:** Não possui estado e não se conecta diretamente a outros componentes, exceto o Redis e o ChromaDB, garantindo seu total desacoplamento.
-
-**Tecnologias-chave:** `Python`, `Flask`, `Ollama`, `ChromaDB`, `Redis`, `smol-agents`, `Docker`.
-
------
-
-### 🖥️ [Nexa Frontend](https://github.com/Titus-System/Nexa-Frontend)
-
-O `Nexa-frontend` é a **interface do cliente** da aplicação. Desenvolvida com React e TypeScript, esta Single-Page Application (SPA) foi projetada para oferecer uma experiência de usuário moderna, reativa e em tempo real.
-
-**Principais Responsabilidades:**
-
-- **Interação com o Usuário:** Fornece as telas para upload de documentos, entrada manual de Part Numbers e visualização de resultados.
-- **Comunicação com a API:** Realiza chamadas para a `Nexa-api` via HTTP REST para iniciar os processos de classificação.
-- **Atualizações em Tempo Real:** Estabelece uma conexão **WebSocket** com a API para receber e exibir o progresso das tarefas sem a necessidade de recarregar a página.
-- **Gerenciamento de Estado:** Controla o estado da interface, garantindo que os dados exibidos sejam consistentes e atualizados.
-
-**Tecnologias-chave:** `React`, `TypeScript`, `Vite`, `Socket.IO-client`, `CSS/Sass`, `Tailwind`.
-
 ## 🛠️ Tecnologias Utilizadas
 
 <p align="center">
