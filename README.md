@@ -118,7 +118,7 @@ O `syncdesk-library` é uma **biblioteca compartilhada** responsável por **padr
 - **Configuração Dinâmica:** Permite configuração dinâmica por meio de funções como `configureLibrary`, adaptando a biblioteca a diferentes ambientes.
 - **Reutilização e Desacoplamento:** Evita duplicação de lógica e código, promovendo manutenção simplificada e evolução independente das interfaces.
 
-**Tecnologias-chave:** `React Native (Expo)`, `TypeScript`, `TailWindCSS`, `WebSocket`, `Node.js 20+`, `ESLint`.
+**Tecnologias-chave:** `TypeScript`, `Axios`, `WebSocket`, `React`, `npm`.
 
 ## 🛠️ Tecnologias Utilizadas
 
