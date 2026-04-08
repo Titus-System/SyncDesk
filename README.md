@@ -51,8 +51,6 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 ![arquitetura](docs/diagramas/arquitetura.jpeg)
 
------
-
 Abaixo você encontra os links para acessar o repositório de cada serviço.
 
 -----
