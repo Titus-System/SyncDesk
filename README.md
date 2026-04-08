@@ -28,13 +28,13 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 ### 📅 Cronograma
 
-| Sprint            | Prazo      | Status       | Documentação           | Entrega |
-| ----------------- | ---------- | ------------ | ---------------------- | ------- |
-| Kick Off          | 03/03/2026 | Concluído    | -                      | -       |
-| Sprint 1          | 05/04/2026 | Concluído    | [sprint1](docs/sprint1.md) | [video](https://youtu.be/ucNTISGGgis)       |
-| Sprint 2          | 03/05/2026 | Não iniciado | - | -     |
-| Sprint 3          | 31/05/2026 | Não iniciado     | - | -       |
-| Feira de Soluções | 11/06/2026 | Não iniciado     | -  | -       |
+| Sprint            | Prazo      | Status       | Entrega |
+| ----------------- | ---------- | ------------ | ------- |
+| Kick Off          | 03/03/2026 | Concluído    | -       |
+| Sprint 1          | 05/04/2026 | Concluído    | [video](https://youtu.be/ucNTISGGgis)       |
+| Sprint 2          | 03/05/2026 | Não iniciado | -     |
+| Sprint 3          | 31/05/2026 | Não iniciado | -       |
+| Feira de Soluções | 11/06/2026 | Não iniciado | -       |
 
 ### Roadmap
 
@@ -42,65 +42,83 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 
 ### 👥 Fatec São José dos Campos - Prof. Jessen Vidal
 
-| Cliente          | Período/Curso                                  | Professor M2      | Professora P2     | Contato Cliente                    |
-| ---------------- | ---------------------------------------------- | ----------------- | ---------------- | ---------------------------------- |
-| Larissa Souza e Rafael Monteiro - Empresa Pro4Tech | 5º Análise e Desenvolvimento de Sistemas | Ronaldo Emerick  | Gerson Penha | <https://www.linkedin.com/company/pro4tech/> |
+| Cliente          | Período/Curso                                  | Professor P2     | Contato Cliente                    |
+| ---------------- | ---------------------------------------------- | ---------------- | ---------------------------------- |
+| Larissa Souza e Rafael Monteiro - Empresa Pro4Tech | 5º Análise e Desenvolvimento de Sistemas | Gerson Penha | <https://www.linkedin.com/company/pro4tech/> |
 
 
 ## Arquitetura
 
 ![arquitetura](docs/diagramas/arquitetura.jpeg)
 
+-----
+
 Abaixo você encontra os links para acessar o repositório de cada serviço.
 
 -----
 
-### 🔹 [Syncdesk API](https://github.com/Titus-System/syncdesk-api)
+### ⚙️ [SyncDesk API](https://github.com/Titus-System/syncdesk-api)
 
 O `syncdesk-api`, construído com FastAPI, é o **núcleo central** da aplicação, responsável por gerenciar toda a lógica de negócio, a comunicação entre os sistemas e a persistência dos dados. 
 
 **Principais Responsabilidades:**
 
-- **Comunicação e Atendimento:** Gerencia o fluxo de dados das conversas, incluindo envio, recebimento e recuperação do histórico de mensagens entre solicitantes e atendentes.
+- **Comunicação e Atendimento:** Gerencia o fluxo de dados das conversas (envio, recebimento e recuperação do histórico de mensagens entre solicitantes e atendentes).
 - **Autenticação e Controle de Acesso:** Realiza o gerenciamento de usuários, incluindo login, cadastro e controle de permissões por perfil (solicitante, atendente e administrador).
-- **Gestão de Chamados:** Controla o ciclo de vida dos atendimentos, incluindo criação, atualização de status e regras de negócio associadas ao atendimento.
+- **Gestão de Chamados:** Controla o ciclo de vida dos atendimentos (criação, atualização de status e regras de negócio associadas ao atendimento).
 - **Processamento da Triagem Automatizada:** Executa a lógica do atendimento inicial automatizado, avaliando respostas do usuário e definindo os próximos passos do fluxo.
 - **Monitoramento e Métricas:** Disponibiliza métricas e indicadores de desempenho da aplicação, permitindo acompanhamento da saúde do sistema.
 - **Persistência de Dados:** Gerencia o armazenamento de dados em diferentes bancos:
   - PostgreSQL para dados estruturados (usuários, chamados, permissões)
   -  MongoDB para dados mais dinâmicos (mensagens e interações)
 
-**Tecnologias-chave:** `Python`, `FastAPI`, `SQLAlchemy`, `PostgreSQL`, `MongoDB`, `JWT`, `Alembic`, `Docker`, `Pytest`.
+**Tecnologias-chave:** `Python`, `FastAPI`, `SQLAlchemy`, `PostgreSQL`, `MongoDB`, `JWT`, `Docker`, `Pytest`.
 
 -----
 
-### 🧠 [Nexa AI Agents](https://github.com/Titus-System/Nexa-AI-Agents/)
+### 📱 [SyncDesk Mobile](https://github.com/Titus-System/syncdesk-mobile)
 
-O `Nexa-AI-Agents` é o **cérebro de IA** do sistema. Este serviço especializado, também em Python, é totalmente focado em executar as tarefas de inteligência artificial. Ele opera de forma independente, recebendo solicitações do `Nexa-api` e retornando resultados sem conhecer a lógica de negócio principal.
+O `syncdesk-mobile` é a **aplicação cliente** desenvolvida em React Native, responsável por fornecer a interface para os solicitantes interagirem com o sistema de atendimento. Ele permite a abertura de atendimentos, comunicação em tempo real com o suporte e acompanhamento do histórico de conversas. A aplicação é construída sobre a arquitetura do Expo.
 
 **Principais Responsabilidades:**
 
-- **Processamento de IA:** Executa os modelos de linguagem para gerar descrições técnicas e classificar NCMs.
-- **Retrieval-Augmented Generation (RAG):** Utiliza um **banco de dados vetorial (ChromaDB)** para buscar informações contextuais e semanticamente similares, aumentando a precisão e a qualidade das respostas geradas pela IA.
-- **Publicação de Progresso:** Comunica-se de forma assíncrona com o `Nexa-api`, publicando atualizações de progresso em um canal **Redis (Pub/Sub)**.
-- **Serviço Agnóstico:** Não possui estado e não se conecta diretamente a outros componentes, exceto o Redis e o ChromaDB, garantindo seu total desacoplamento.
+- **Interface do Usuário:** Implementa as telas da aplicação mobile, com a garantia uma experiência fluida e responsiva para o solicitante.
+- **Comunicação em Tempo Real:** Integra o cliente WebSocket para envio e recebimento de mensagens em tempo real, permitindo interação contínua com atendentes e com o sistema automatizado.
+- **Consumo de APIs e Histórico de Dados:** Realiza chamadas REST para recuperação de dados como históricos de conversas, incluindo suporte à paginação.
+- **Integração com Triagem Automatizada:** Exibe e processa as mensagens automáticas iniciais, com suporte a respostas estruturadas (como botões de seleção), conforme definido pelos contratos de API.
 
-**Tecnologias-chave:** `Python`, `Flask`, `Ollama`, `ChromaDB`, `Redis`, `smol-agents`, `Docker`.
+**Tecnologias-chave:** `React Native (Expo)`, `TypeScript`, `TailWindCSS`, `WebSocket`, `Node`, `ESLint`.
 
 -----
 
-### 🖥️ [Nexa Frontend](https://github.com/Titus-System/Nexa-Frontend)
+### 🖥️ [SyncDesk Web](https://github.com/Titus-System/syncdesk-web)
 
-O `Nexa-frontend` é a **interface do cliente** da aplicação. Desenvolvida com React e TypeScript, esta Single-Page Application (SPA) foi projetada para oferecer uma experiência de usuário moderna, reativa e em tempo real.
+O `syncdesk-web` gerencia o frontend voltado para atendentes e administradores. Desenvolvido com React e Vite, ele oferece uma interface para gerenciamento de chamados, controle de usuários, dashboards de monitoramento e gestão operacional do sistema. As telas priorizam organização das informações para uso proveitoso em ambiente corporativo.
 
 **Principais Responsabilidades:**
 
-- **Interação com o Usuário:** Fornece as telas para upload de documentos, entrada manual de Part Numbers e visualização de resultados.
-- **Comunicação com a API:** Realiza chamadas para a `Nexa-api` via HTTP REST para iniciar os processos de classificação.
-- **Atualizações em Tempo Real:** Estabelece uma conexão **WebSocket** com a API para receber e exibir o progresso das tarefas sem a necessidade de recarregar a página.
-- **Gerenciamento de Estado:** Controla o estado da interface, garantindo que os dados exibidos sejam consistentes e atualizados.
+- **Interface moderna e responsiva:** Construída com React e TailwindCSS, com foco em clareza visual, organização e produtividade no uso diário.
+- **Controle de Acesso e Perfis:** Suporta diferentes níveis de acesso, com funcionalidades específicas para atendentes e administradores.
+- **Consumo de APIs e Sincronização de Dados:** Utiliza React Query para gerenciamento de estado assíncrono e consumo eficiente das APIs REST.
+- **Comunicação em Tempo Real:** Integra WebSocket para envio e recebimento de mensagens, mantendo a interface sincronizada com o backend.
+- **Manutenção de Chamados:** Permite visualizar e controlar o status dos chamados ao longo do fluxo de atendimento.
 
-**Tecnologias-chave:** `React`, `TypeScript`, `Vite`, `Socket.IO-client`, `CSS/Sass`, `Tailwind`.
+**Tecnologias-chave:** `React`, `JavaScript`, `Vite`, `React Query`, `WebSocket`, `TailwindCSS`, `Node`, `ESLint`.
+
+-----
+
+### 🗂️ [SyncDesk Library](https://github.com/Titus-System/syncdesk-library)
+
+O `syncdesk-library` é uma **biblioteca compartilhada** responsável por **padronizar a comunicação entre os frontends (mobile e web) e o backend da aplicação**. Publicada como pacote npm, ela centraliza a lógica de integração, garantindo consistência no consumo das APIs.
+
+**Principais Responsabilidades:**
+
+- **Padronização da Integração com o Backend:** Define uma camada única de comunicação para os frontends, para que mobile e web utilizem os mesmos contratos e estruturas de requisição.
+- **Gerenciamento de Requisições HTTP:** Utiliza Axios para estruturar chamadas REST, centralizando configurações como base URL, headers e interceptadores.
+- **Configuração Dinâmica:** Permite configuração dinâmica por meio de funções como `configureLibrary`, adaptando a biblioteca a diferentes ambientes.
+- **Reutilização e Desacoplamento:** Evita duplicação de lógica e código, promovendo manutenção simplificada e evolução independente das interfaces.
+
+**Tecnologias-chave:** `React Native (Expo)`, `TypeScript`, `TailWindCSS`, `WebSocket`, `Node.js 20+`, `ESLint`.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -131,7 +149,6 @@ O `Nexa-frontend` é a **interface do cliente** da aplicação. Desenvolvida com
   <img alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
   <img alt="Github" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg">
   <img alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
-  <img alt="Jira" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg">
   <img alt="JavaScript" height="30" width="40"src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg">
 </p>
 
