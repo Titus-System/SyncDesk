@@ -21,8 +21,8 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | **1** | Como atendente, quero poder trocar mensagens com clientes em uma tela de chat, para conseguir compreender suas necessidades e auxiliar rapidamente.  | CONCLUÍDA | ▲ Alta |
 | **1** | Como solicitante, quero começar uma conversa rapidamente e ser guiado com algumas perguntas iniciais, para que meu problema seja identificado de forma ágil e descomplicada. | CONCLUÍDA | ▲ Alta |
 | **1** | Como atendente, quero gerenciar o ciclo de vida dos chamados (atualizar status, encaminhar, atribuir e encerrar), para acompanhar e controlar as solicitações dos clientes. | CONCLUÍDA | ▲ Alta |
-| **2** | Como gestor da aplicação, quero que o meu acesso possua ferramentas administrativas (como gestão de usuários e monitoramento de atendimentos), para ter controle sobre a operação do suporte. | PENDENTE | ▲ Alta |
-| **2** | Como usuário do sistema, quero poder realizar pesquisas no histórico de conversas, para localizar trocas de mensagens específicas de forma mais rápida. | PENDENTE | ▼ Baixa |
+| **2** | Como gestor da aplicação, quero que o meu acesso possua ferramentas administrativas (como gestão de usuários e monitoramento de atendimentos), para ter controle sobre a operação do suporte. | EM ANDAMENTO | ▲ Alta |
+| **2** | Como usuário do sistema, quero poder realizar pesquisas no histórico de conversas, para localizar trocas de mensagens específicas de forma mais rápida. | EM ANDAMENTO | ▼ Baixa |
 | **3** | Como solicitante do atendimento, quero receber notificações quando houver atualizações nos meus chamados, para acompanhar o andamento dos atendimentos sem precisar acessar constantemente o sistema. | PENDENTE | **=** Média |
 | **3** | Como administrador, quero visualizar dashboards sobre o sistema e gráficos de auditoria, para embasar a tomada de decisões da empresa em dados reais e acompanhar o desempenho dos atendentes. | PENDENTE | **=** Média |
 | **3** | Como solicitante do atendimento, quero poder deixar uma avaliação após o encerramento, para registrar meu nível de satisfação com o suporte prestado. | PENDENTE | ▼ Baixa |
@@ -33,7 +33,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | ----------------- | ---------- | ------------ | ------- |
 | Kick Off          | 03/03/2026 | Concluído    | -       |
 | Sprint 1          | 05/04/2026 | Concluído    | [video](https://youtu.be/ucNTISGGgis)       |
-| Sprint 2          | 03/05/2026 | Não iniciado | -     |
+| Sprint 2          | 03/05/2026 | Em andamento | -     |
 | Sprint 3          | 31/05/2026 | Não iniciado | -       |
 | Feira de Soluções | 11/06/2026 | Não iniciado | -       |
 
