@@ -15,7 +15,7 @@ jobs:
 
       - name: Update submodules
         run: |
-          git submodule update --remote --recursive
+          git submodule update --remote
 
       - name: Commit and Push
         run: |
