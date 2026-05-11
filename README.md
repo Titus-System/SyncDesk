@@ -35,7 +35,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | Sprint 1          | 05/04/2026 | Concluído    | [video](https://youtu.be/ucNTISGGgis)       |
 | Sprint 2          | 03/05/2026 | Concluído    | -     |
 | Sprint 3          | 31/05/2026 | Não iniciado | -       |
-| Feira de Soluções | 11/06/2026 | Não iniciado | -       |
+| Feira de Soluções | 25/06/2026 | Não iniciado | -       |
 
 ### Roadmap
 
