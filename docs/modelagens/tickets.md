@@ -5,6 +5,7 @@
   "type": "issue", //issue, access, new_feature
   "criticality": "high", //issue - always high, access - always medium, new feature - always LOW
   "product": "Product a",
+  "level": "N1", //current level of the ticket
   "status": "finished", //Open, In progress, Waiting for provider, Waiting for validation, Finished
   "creation_date": "2024-03-26T10:00:00Z",
   "description": "free text provided by the requester",
