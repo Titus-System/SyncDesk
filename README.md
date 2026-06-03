@@ -23,9 +23,9 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | **1** | Como atendente, quero gerenciar o ciclo de vida dos chamados (atualizar status, encaminhar, atribuir e encerrar), para acompanhar e controlar as solicitações dos clientes. | CONCLUÍDA | ▲ Alta |
 | **2** | Como gestor da aplicação, quero que o meu acesso possua ferramentas administrativas (como gestão de usuários e monitoramento de atendimentos), para ter controle sobre a operação do suporte. | CONCLUÍDA | ▲ Alta |
 | **2** | Como usuário do sistema, quero poder realizar pesquisas no histórico de conversas, para localizar trocas de mensagens específicas de forma mais rápida. | CONCLUÍDA | ▼ Baixa |
-| **3** | Como solicitante do atendimento, quero identificar atualizações nos meus chamados por meio de alertas na interface do aplicativo, para não precisar buscar novidades manualmente em cada tela. | PENDENTE | **=** Média |
-| **3** | Como administrador, quero visualizar dashboards sobre o sistema e gráficos de auditoria, para embasar a tomada de decisões da empresa em dados reais e acompanhar o desempenho dos atendentes. | PENDENTE | **=** Média |
-| **3** | Como solicitante do atendimento, quero poder deixar uma avaliação após o encerramento, para registrar meu nível de satisfação com o suporte prestado. | PENDENTE | ▼ Baixa |
+| **3** | Como solicitante do atendimento, quero que novas mensagens sejam identificadas por meio de alertas na interface do aplicativo, para não precisar buscar por novidades manualmente, acessando cada tela. | CONCLUÍDA | **=** Média |
+| **3** | Como administrador, quero visualizar dashboards sobre o sistema e gráficos de auditoria, para embasar a tomada de decisões da empresa em dados reais e acompanhar o desempenho dos atendentes. | CONCLUÍDA | **=** Média |
+| **3** | Como solicitante do atendimento, quero poder deixar uma avaliação após o encerramento, para registrar meu nível de satisfação com o suporte prestado. | CONCLUÍDO | ▼ Baixa |
 
 ### 📅 Cronograma
 
@@ -34,7 +34,7 @@ O projeto está sendo seguindo o método Ágil SCRUM, dividindo o trabalho em sp
 | Kick Off          | 03/03/2026 | Concluído    | -       |
 | Sprint 1          | 05/04/2026 | Concluído    | [video](https://youtu.be/ucNTISGGgis)       |
 | Sprint 2          | 03/05/2026 | Concluído    | -     |
-| Sprint 3          | 31/05/2026 | Não iniciado | -       |
+| Sprint 3          | 31/05/2026 | Concluído    | -       |
 | Feira de Soluções | 25/06/2026 | Não iniciado | -       |
 
 ### Roadmap
